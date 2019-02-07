@@ -1,4 +1,5 @@
 <?php
+    ob_start();
     include_once("../includes/db.php");
     include_once("../functions.php");
     session_start();
@@ -27,12 +28,8 @@
                     echo "<h2 class = 'text-center'>User Already Exists</h2>";
                     header("refresh: 2, url=../register.php#registerDiv");
                 } else{
-                    $options = [
-                        'cost' => 10,
-                        'salt' => mcrypt_create_iv(22, MCRYPT_DEV_URANDOM),            
-                    ];
 
-                    $hashed_password = password_hash($user_password, PASSWORD_BCRYPT, $options);
+                    $hashed_password = password_hash($user_password, PASSWORD_BCRYPT);
 
                     $query = "INSERT INTO users (user_firstname, user_lastname, user_email, user_password, about_me) VALUES ('$user_firstname', '$user_lastname', '$user_email', '$hashed_password', '$user_about')";
 

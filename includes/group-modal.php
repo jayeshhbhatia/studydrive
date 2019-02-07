@@ -1,11 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: NIKHIL SHADIJA
- * Date: 3/21/2018
- * Time: 3:56 PM
- */
-
+ob_start();
 if(isset($_POST['create_group'])){
     $users_array = $_POST['selectusers'];
     $group_name = $_POST['group_name'];

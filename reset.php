@@ -57,12 +57,9 @@
             
             if($password === $confirm_pass) {
                 
-                $options = [
-                    'cost' => 10,
-                    'salt' => mcrypt_create_iv(22, MCRYPT_DEV_URANDOM),            
-                ];
+                
 
-                $hashed_password = password_hash($password, PASSWORD_BCRYPT, $options);
+                $hashed_password = password_hash($password, PASSWORD_BCRYPT);
                 
                 $query = "UPDATE users SET token='', user_password='$hashed_password', updated_at=CURRENT_TIMESTAMP() WHERE token='$token' AND user_email='$user_email'";
                 

@@ -1,4 +1,7 @@
 <!--MODAL -->
+<?php
+ob_start();
+?>
 <form class="modal fade form-file-info" id="fileinfo" data-backdrop="static" action="" method="post">
     <div class="modal-dialog modal-md">
         <!--MODAL CONTENT-->

@@ -1,4 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
+   <?php
+        ob_start();
+    ?>
     <div class="container-fluid">
         <div class="navbar-wrapper">
             <div class="navbar-toggle">

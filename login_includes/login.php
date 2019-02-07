@@ -1,3 +1,6 @@
+<?php
+ob_start();
+?>
 <head>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
 </head>
@@ -41,7 +44,7 @@
 
             //echo $file_id;
             if($db_token == ""){
-                header("Location: ../dashboard.php");
+                header("Location: ../mydrive.php");
             } else{
                 echo "<div class='text-center'><h3 class='text-center'>Cannot Login! <br> You have Either Not Verified Email Or Requested For Password Change</h3></div>";
                 header("refresh: 5, url=../index.php");

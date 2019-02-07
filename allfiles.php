@@ -1,5 +1,5 @@
 <?php 
-
+    ob_start();
     include_once("functions.php");
 
     $date = new DateTime();

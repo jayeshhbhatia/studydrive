@@ -1,8 +1,9 @@
 <?php
+    ob_start();
     define("SERVER","localhost");
-    define("USER","Nikhil");
-    define("PASSWORD","n20081998");
-    define("DB","studyshare");
+    define("USER","jayesh");
+    define("PASSWORD","abc123");
+    define("DB","studydrive");
     $connection=mysqli_connect(SERVER,USER,PASSWORD,DB);
     
     if($connection){

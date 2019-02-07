@@ -1,22 +1,20 @@
+<?php
+ob_start();
+?>
 <div class="sidebar custom-sidebar" data-color="custom-darkblue">
     <!--
                 Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
             -->
     <div class="logo">
-        <a href="dashboard.php" class="simple-text logo-mini">
+        <a href="mydrive.php" class="simple-text logo-mini">
                     SD
-        </a> <a href="dashboard.php" class="simple-text logo-normal">
+        </a> <a href="mydrive.php" class="simple-text logo-normal">
                     Study Drive
         </a>
     </div>
     <div class="sidebar-wrapper">
         <ul class="nav">
-            <li <?php if($page=="dashboard" ) echo "class='active'"; ?> >
-                <a href="dashboard.php"> 
-                    <i class="now-ui-icons design_app"></i>
-                    <p>Home</p>
-                </a>
-            </li>
+            
 
             <li <?php if($page=="mydrive" ) echo "class='active'"; ?> >
                <?php 

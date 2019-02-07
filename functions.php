@@ -1,5 +1,5 @@
 <?php
-    
+    ob_start();
     /*FUNCTIONS RELATED TO USER*/
     function check_user(){
         if(!isset($_SESSION['user_id'])){
